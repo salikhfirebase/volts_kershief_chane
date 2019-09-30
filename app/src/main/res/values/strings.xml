@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Your dream</string>
-    <string name="facebook_app_id">318294232450493</string>
-    <string name="fb_login_protocol_scheme">fb318294232450493</string>
+    <string name="app_name">Best Match</string>
+    <string name="facebook_app_id">386673125606868</string>
+    <string name="fb_login_protocol_scheme">fb386673125606868</string>
     <string name="att_result">Result</string>
     <string name="or_delimeter">or</string>
     <string name="create_account">Create account</string>

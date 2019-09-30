@@ -27,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/enter_nickname_edit_text" android:layout_marginEnd="8dp"
+                android:id="@+id/nick_et_glavnaya" android:layout_marginEnd="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/edit_nickname_text_view"
                 android:layout_marginStart="16dp" app:layout_constraintStart_toStartOf="parent"
@@ -40,7 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/edit_birth_date_text_view" android:layout_marginTop="60dp"
-                app:layout_constraintTop_toBottomOf="@+id/enter_nickname_edit_text" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nick_et_glavnaya" app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
                 app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp" android:layout_marginBottom="8dp"
@@ -59,19 +59,19 @@
                 android:layout_marginTop="8dp">
 
             <Spinner
-                    android:id="@+id/enter_days_date_spinner"
+                    android:id="@+id/dni_spinner"
                     android:entries="@array/days"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
             <Spinner
-                    android:id="@+id/enter_months_date_spinner"
+                    android:id="@+id/mesyac_spinner"
                     android:entries="@array/months"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
             <Spinner
-                    android:id="@+id/enter_years_date_spinner"
+                    android:id="@+id/god_spinner"
                     android:entries="@array/years"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
@@ -105,7 +105,7 @@
                 android:layout_height="wrap_content"
                 android:max="70"
                 android:progress="0"
-                android:id="@+id/enter_height_bar" android:layout_marginTop="8dp"
+                android:id="@+id/visota_bar" android:layout_marginTop="8dp"
                 app:layout_constraintTop_toBottomOf="@+id/edit_textView4" android:layout_marginStart="8dp"
                 app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
                 android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
@@ -128,7 +128,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/edit_weight_text_view" android:layout_marginTop="24dp"
-                app:layout_constraintTop_toBottomOf="@+id/enter_height_bar" android:layout_marginBottom="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/visota_bar" android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
                 app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
@@ -142,13 +142,13 @@
                 android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
                 app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp" android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/enter_height_bar" android:layout_marginBottom="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/visota_bar" android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.972"
                 app:layout_constraintVertical_bias="0.038"/>
         <SeekBar
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/enter_weight_bar"
+                android:id="@+id/ves_bar"
                 android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
@@ -162,7 +162,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/edit_race_txt_view" android:layout_marginTop="60dp"
-                app:layout_constraintTop_toBottomOf="@+id/enter_weight_bar" android:layout_marginBottom="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/ves_bar" android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
                 app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
@@ -172,12 +172,12 @@
                 android:layout_width="wrap_content"
                 android:entries="@array/races"
                 android:layout_height="wrap_content"
-                android:id="@+id/enter_race_spinner" app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/rasa_spinner_glavnaya" app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp" app:layout_constraintStart_toEndOf="@+id/edit_race_txt_view"
                 android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/enter_weight_bar"
+                app:layout_constraintTop_toBottomOf="@+id/ves_bar"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintVertical_bias="0.075"/>
 
@@ -196,12 +196,12 @@
             <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/i_m_a_single_person" android:id="@+id/enter_single_person_rbutton"
+                    android:text="@string/i_m_a_single_person" android:id="@+id/odin_radio_button"
                     android:checked="true" android:clickable="true"/>
             <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/we_are_a_couple" android:id="@+id/enter_couple_rbutton"
+                    android:text="@string/we_are_a_couple" android:id="@+id/para_radio_button"
                     android:clickable="true"/>
         </RadioGroup>
 
@@ -233,7 +233,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="true"
-                android:id="@+id/enter_have_house_chooser" android:layout_marginTop="16dp"
+                android:id="@+id/est_dom_tview" android:layout_marginTop="16dp"
                 app:layout_constraintTop_toBottomOf="@+id/edit_other_data" app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
@@ -246,11 +246,11 @@
                 android:text="@string/have_car_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/enter_have_car_view" app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/yest_mashina_tview" app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
                 app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp" android:layout_marginTop="16dp"
-                app:layout_constraintTop_toBottomOf="@+id/enter_have_house_chooser" android:layout_marginBottom="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/est_dom_tview" android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintVertical_bias="0.0"
                 android:drawableRight="@drawable/car_24" android:drawableEnd="@drawable/car_24"
@@ -260,9 +260,9 @@
                 android:text="@string/have_motorcycle_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/enter_have_motorcycle_text_view" app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/est_motorcicle_tview" app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginTop="16dp"
-                app:layout_constraintTop_toBottomOf="@+id/enter_have_car_view" android:layout_marginBottom="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/yest_mashina_tview" android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
                 app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"
@@ -276,7 +276,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/enter_want_make_clear" android:layout_marginTop="48dp"
-                app:layout_constraintTop_toBottomOf="@+id/enter_have_motorcycle_text_view"
+                app:layout_constraintTop_toBottomOf="@+id/est_motorcicle_tview"
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
@@ -287,7 +287,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textCapSentences|textMultiLine"
                 android:ems="10"
-                android:id="@+id/enter_want_make_clear_edit_text" android:layout_marginTop="8dp"
+                android:id="@+id/proyasnit_field" android:layout_marginTop="8dp"
                 app:layout_constraintTop_toBottomOf="@+id/enter_want_make_clear" android:layout_marginStart="8dp"
                 app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
                 android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
@@ -302,7 +302,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/enter_optional_view" android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/enter_want_make_clear_edit_text"
+                app:layout_constraintTop_toBottomOf="@+id/proyasnit_field"
                 app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
                 android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp"

@@ -10,7 +10,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:context=".fragments.CondishnsFragment">
+                tools:context=".fragments.UsloviyaFragment">
 
 
             <RadioGroup
@@ -29,12 +29,12 @@
                 <RadioButton
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/i_m_a_single_person" android:id="@+id/enter_single_person_radio_btn"
+                        android:text="@string/i_m_a_single_person" android:id="@+id/odin_sovsem_radio_button"
                         android:checked="true" android:clickable="true"/>
                 <RadioButton
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/we_are_a_couple" android:id="@+id/enter_couple_radio_btn" android:clickable="true"/>
+                        android:text="@string/we_are_a_couple" android:id="@+id/para_sovsem_radio_button" android:clickable="true"/>
             </RadioGroup>
 
             <Button
@@ -67,7 +67,7 @@
                     android:layout_height="wrap_content"
                     android:clickable="true"
                     android:drawableRight="@drawable/home_filled_24"
-                    android:id="@+id/enter_i_have_house_text_view" android:layout_marginTop="16dp"
+                    android:id="@+id/est_domik_tview" android:layout_marginTop="16dp"
                     app:layout_constraintTop_toBottomOf="@+id/other_data_text_view" app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginBottom="8dp"
                     app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
@@ -80,11 +80,11 @@
                     android:text="@string/have_car_text_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/enter_i_have_car_text_view" app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/est_tachka_tview" app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
                     app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp"
-                    app:layout_constraintTop_toBottomOf="@+id/enter_i_have_house_text_view" android:layout_marginBottom="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/est_domik_tview" android:layout_marginBottom="8dp"
                     app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintVertical_bias="0.0"
                     android:drawableRight="@drawable/car_24" android:drawableEnd="@drawable/car_24"
@@ -95,9 +95,9 @@
                     android:text="@string/have_motorcycle_text_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/enter_i_have_motorcycle_text_view" app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/est_motik_tview" app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
-                    app:layout_constraintTop_toBottomOf="@+id/enter_i_have_car_text_view" android:layout_marginBottom="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/est_tachka_tview" android:layout_marginBottom="8dp"
                     app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
                     app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"
@@ -111,7 +111,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/i_want_to_make_clear" android:layout_marginTop="48dp"
-                    app:layout_constraintTop_toBottomOf="@+id/enter_i_have_motorcycle_text_view"
+                    app:layout_constraintTop_toBottomOf="@+id/est_motik_tview"
                     app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginBottom="8dp"
                     app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
@@ -122,7 +122,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="textCapSentences|textMultiLine"
                     android:ems="10"
-                    android:id="@+id/enter_wanna_make_clear_edit_text" android:layout_marginTop="8dp"
+                    android:id="@+id/nado_utochnit_field" android:layout_marginTop="8dp"
                     app:layout_constraintTop_toBottomOf="@+id/i_want_to_make_clear" android:layout_marginStart="8dp"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
                     android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
@@ -137,7 +137,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/optional_text_view" android:layout_marginTop="8dp"
-                    app:layout_constraintTop_toBottomOf="@+id/enter_wanna_make_clear_edit_text"
+                    app:layout_constraintTop_toBottomOf="@+id/nado_utochnit_field"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
                     android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp"
@@ -151,7 +151,7 @@
                     app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp" android:layout_marginTop="8dp"
                     app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
-                    app:layout_constraintBottom_toTopOf="@+id/enter_i_have_house_text_view" android:rotation="20"
+                    app:layout_constraintBottom_toTopOf="@+id/est_domik_tview" android:rotation="20"
                     app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.275"
                     app:srcCompat="@drawable/heart_back"/>
             <ImageView
@@ -160,7 +160,7 @@
                     android:id="@+id/imageView5" app:layout_constraintStart_toEndOf="@+id/imageView"
                     android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="8dp"
                     app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
-                    app:layout_constraintBottom_toTopOf="@+id/enter_i_have_house_text_view"
+                    app:layout_constraintBottom_toTopOf="@+id/est_domik_tview"
                     app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp" android:rotation="-30" app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintVertical_bias="0.769" app:srcCompat="@drawable/heart_back"/>
@@ -179,9 +179,9 @@
                     android:layout_width="79dp"
                     android:layout_height="79dp"
                     android:id="@+id/imageView7" android:layout_marginTop="8dp"
-                    app:layout_constraintTop_toBottomOf="@+id/enter_i_have_motorcycle_text_view"
+                    app:layout_constraintTop_toBottomOf="@+id/est_motik_tview"
                     app:layout_constraintStart_toEndOf="@+id/i_want_to_make_clear" android:layout_marginLeft="8dp"
-                    android:layout_marginStart="8dp" app:layout_constraintBottom_toTopOf="@+id/enter_wanna_make_clear_edit_text"
+                    android:layout_marginStart="8dp" app:layout_constraintBottom_toTopOf="@+id/nado_utochnit_field"
                     app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.33"
                     app:layout_constraintVertical_bias="0.666" android:rotation="-40"
@@ -200,7 +200,7 @@
                     android:layout_width="126dp"
                     android:layout_height="75dp"
                     android:id="@+id/imageView9" android:layout_marginTop="8dp"
-                    app:layout_constraintTop_toBottomOf="@+id/enter_wanna_make_clear_edit_text"
+                    app:layout_constraintTop_toBottomOf="@+id/nado_utochnit_field"
                     app:layout_constraintStart_toEndOf="@+id/imageView8" android:layout_marginLeft="8dp"
                     android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
                     app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"

@@ -5,7 +5,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#ffcfe2 "
-        tools:context=".fragments.TheSignUpFragment">
+        tools:context=".fragments.RegaFragment">
 
     <EditText
             android:layout_width="match_parent"
@@ -16,7 +16,7 @@
             android:layout_marginStart="16dp" android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/sign_in_email_text_view" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintVertical_bias="0.0" android:id="@+id/enter_log_in_email_edit_text" android:hint="email"/>
+            app:layout_constraintVertical_bias="0.0" android:id="@+id/pochta_et_vhod" android:hint="email"/>
     <TextView
             android:text="@string/reg_form_email"
             android:layout_width="wrap_content"
@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/sign_in_pass_text_view" android:layout_marginTop="32dp"
-            app:layout_constraintTop_toBottomOf="@+id/enter_log_in_email_edit_text" android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/pochta_et_vhod" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/enter_log_in_pass_edit_text"
+            android:id="@+id/parol_et_vhod"
             android:hint="password" android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/sign_in_pass_text_view" android:layout_marginStart="16dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
@@ -62,7 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/enter_log_in_button" android:layout_marginTop="24dp"
-            app:layout_constraintTop_toBottomOf="@+id/enter_log_in_pass_edit_text" android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/parol_et_vhod" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"

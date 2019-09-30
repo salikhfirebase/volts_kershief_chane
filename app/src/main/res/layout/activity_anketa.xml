@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#ffcfe2"
-        tools:context=".AnketaActivity">
+        tools:context=".AnketaMainActivity">
 
     <FrameLayout
             android:id="@+id/question_container"

@@ -13,7 +13,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:context=".fragments.TheMainInfoFragment">
+            tools:context=".fragments.GlavnayaInfaFragment">
 
 
         <TextView
@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/enter_nickname_edit_text" android:layout_marginEnd="8dp"
+                android:id="@+id/nick_et_glavnaya" android:layout_marginEnd="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/nickname_text_view"
                 android:layout_marginStart="16dp" app:layout_constraintStart_toStartOf="parent"
@@ -45,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/birth_tview" android:layout_marginTop="60dp"
-                app:layout_constraintTop_toBottomOf="@+id/enter_nickname_edit_text" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nick_et_glavnaya" app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
                 app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp" android:layout_marginBottom="8dp"
@@ -63,19 +63,19 @@
                 app:layout_constraintVertical_bias="0.058" android:id="@+id/linearLayout2">
 
             <Spinner
-                    android:id="@+id/enter_birth_days_spinner"
+                    android:id="@+id/dni_spinner_glavnaya"
                     android:entries="@array/days"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
             <Spinner
-                    android:id="@+id/enter_birth_months_spinner"
+                    android:id="@+id/mesyac_spinner_glavnaya"
                     android:entries="@array/months"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
             <Spinner
-                    android:id="@+id/enter_birth_years_spinner"
+                    android:id="@+id/god_spinner_glavnaya"
                     android:entries="@array/years"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
@@ -109,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:max="70"
                 android:progress="0"
-                android:id="@+id/enter_height_sbar" android:layout_marginTop="8dp"
+                android:id="@+id/rost_bar_glavnaya" android:layout_marginTop="8dp"
                 app:layout_constraintTop_toBottomOf="@+id/textView4" android:layout_marginStart="8dp"
                 app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
                 android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
@@ -131,7 +131,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/weight_text_view" android:layout_marginTop="24dp"
-                app:layout_constraintTop_toBottomOf="@+id/enter_height_sbar" android:layout_marginBottom="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/rost_bar_glavnaya" android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
                 app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
@@ -145,13 +145,13 @@
                 android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
                 app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp" android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/enter_height_sbar" android:layout_marginBottom="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/rost_bar_glavnaya" android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.97"
                 app:layout_constraintVertical_bias="0.12"/>
         <SeekBar
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/enter_weight_sbar"
+                android:id="@+id/ves_bar_glavnaya"
                 android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
@@ -164,7 +164,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/race_text_view" android:layout_marginTop="60dp"
-                app:layout_constraintTop_toBottomOf="@+id/enter_weight_sbar" android:layout_marginBottom="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/ves_bar_glavnaya" android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
                 app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
@@ -174,11 +174,11 @@
                 android:layout_width="wrap_content"
                 android:entries="@array/races"
                 android:layout_height="wrap_content"
-                android:id="@+id/enter_race_spinner" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                android:id="@+id/rasa_spinner_glavnaya" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp" app:layout_constraintStart_toEndOf="@+id/race_text_view"
                 android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/enter_weight_sbar" app:layout_constraintHorizontal_bias="0.81"
+                app:layout_constraintTop_toBottomOf="@+id/ves_bar_glavnaya" app:layout_constraintHorizontal_bias="0.81"
                 app:layout_constraintVertical_bias="0.468"/>
         <Button
                 android:background="?attr/selectableItemBackground"
@@ -217,7 +217,7 @@
                 android:layout_width="102dp"
                 android:layout_height="84dp" card_view:srcCompat="@drawable/heart_back"
                 android:id="@+id/imageView3" android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/enter_nickname_edit_text"
+                app:layout_constraintTop_toBottomOf="@+id/nick_et_glavnaya"
                 app:layout_constraintStart_toEndOf="@+id/birth_tview" android:layout_marginLeft="8dp"
                 android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toTopOf="@+id/linearLayout2" app:layout_constraintEnd_toEndOf="parent"
@@ -228,8 +228,8 @@
                 android:layout_height="53dp" card_view:srcCompat="@drawable/heart_back"
                 android:id="@+id/imageView4"
                 android:layout_marginTop="4dp"
-                app:layout_constraintTop_toBottomOf="@+id/enter_height_sbar" android:layout_marginBottom="4dp"
-                app:layout_constraintBottom_toTopOf="@+id/enter_weight_sbar"
+                app:layout_constraintTop_toBottomOf="@+id/rost_bar_glavnaya" android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/ves_bar_glavnaya"
                 app:layout_constraintStart_toEndOf="@+id/weight_text_view" android:layout_marginLeft="8dp"
                 android:layout_marginStart="8dp" app:layout_constraintEnd_toStartOf="@+id/enter_textView8_weight"
                 android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
