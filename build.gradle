@@ -33,6 +33,9 @@ allprojects {
         maven{
             url 'https://sdk.uxcam.com/android/'
         }
+        maven {
+            url "https://sdk.smartlook.com/android/release"
+        }
     }
 }
 

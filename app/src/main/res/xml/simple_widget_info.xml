@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    class SimpleWidgetProvider: AppWidgetProvider() {
+    override fun onUpdate(context: Context?, appWidgetManager: AppWidgetManager?, appWidgetIds: IntArray?) {
+    super.onUpdate(context, appWidgetManager, appWidgetIds)
+    }
+    }
+</PreferenceScreen>

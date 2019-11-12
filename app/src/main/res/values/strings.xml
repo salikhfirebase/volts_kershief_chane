@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Best Match</string>
-    <string name="facebook_app_id">386673125606868</string>
-    <string name="fb_login_protocol_scheme">fb386673125606868</string>
+    <string name="app_name">One night date. Adults datings. 18+</string>
+    <string name="facebook_app_id">3075946419166230</string>
+    <string name="fb_login_protocol_scheme">fb3075946419166230</string>
     <string name="att_result">Result</string>
     <string name="or_delimeter">or</string>
     <string name="create_account">Create account</string>
@@ -19,6 +19,9 @@
     <string name="race">Race:</string>
     <string name="reg_form_email">Email</string>
     <string name="reg_form_password">Password</string>
+
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+    <string name="default_notification_channel_name">Dating app</string>
 
     <string-array name="days">
         <item>01</item>

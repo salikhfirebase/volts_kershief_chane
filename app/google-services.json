@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "982195816735",
-    "firebase_url": "https://bestmatch-650da.firebaseio.com",
-    "project_id": "bestmatch-650da",
-    "storage_bucket": "bestmatch-650da.appspot.com"
+    "project_number": "254614080064",
+    "firebase_url": "https://voltskershiefchane.firebaseio.com",
+    "project_id": "voltskershiefchane",
+    "storage_bucket": "voltskershiefchane.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:982195816735:android:270df1c0d0ef3f11a9c82a",
+        "mobilesdk_app_id": "1:254614080064:android:5850400d1da77203bbada5",
         "android_client_info": {
-          "package_name": "com.bestmatch.foryou"
+          "package_name": "volts.kershief.chane"
         }
       },
       "oauth_client": [
         {
-          "client_id": "982195816735-c5f3cuvcf3ip369ptt4qcpd1og6n0sf2.apps.googleusercontent.com",
+          "client_id": "254614080064-di4v8u79m1tspt37ekjdrt0s02sgbvpi.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyChjgMgFGe2tPLiibKxxyZvFPrJRRMSbK0"
+          "current_key": "AIzaSyDm-La0jSIBTjsFW13GOBGikFkLy2D0Z7M"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "982195816735-c5f3cuvcf3ip369ptt4qcpd1og6n0sf2.apps.googleusercontent.com",
+              "client_id": "254614080064-di4v8u79m1tspt37ekjdrt0s02sgbvpi.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
